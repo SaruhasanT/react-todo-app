@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: medium;
+}
+button {
+  border-radius: 4px;
+  border: none;
+}
+.todo {
+  display: flex;
+  width: 400px;
+  margin-block: 10px;
+  justify-content: space-between;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.todo > p {
+  padding: 4px 8px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 100%;
+  border-left: none;
+  border-radius: 4px;
+}
+
+.todo-text {
+  background-color: lightgrey;
+}
+
+.todo .delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  height: 100%;
+}
+.todo .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.todo input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 5px 16px;
+  border-radius: 4px;
+}
+.todo .buttons .edit-btn {
+  background-color: green;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: white;
+  padding: 5px 16px;
+}
+.delete-btn {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.input-area {
+  display: flex;
+  margin: 10px;
+  gap: 5px;
+}
+.input-area input {
+  width: 300px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+.input-area button {
+  padding: 0 16px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.todo-container {
+  margin: 10px;
+}
+.save-btn,
+.edit-delete-btn {
+  height: inherit;
+  padding: 5px 16px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.save-btn {
+  background-color: lightgreen;
+  color: #fff;
+}
+.done-btn {
+  padding: 0 16px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.done {
+  text-decoration: line-through;
+  background-color: #5a5a5a;
+}
